@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saving</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!---------------------------------------Start Header --------------------------------------->
+    <header class="heading-message">
+        <h1>Monthly-Expenses</h1>
+    </header>
+    <!------------------------------------- Start Main ------------------------------------------->
+    <main>
+        <!-------------------------------- Import Image ----------------------------------------->
+        <div class="image">
+            <img src="picture/Monthly-expenses.jpg" alt="">
+        </div>
+        <!------------------------------------------ Import Calculation ---------------------------->
+        <section>
+            <div>
+                <h3>Monthly Income</h3>
+                <!---------------------------------- Input Total Amount ----------------------------------->
+                <p>Income: <input id="total-income" type="text"></p>
+                <h3>Expenses</h3>
+                <!---------------------------------- Input Expenses Amount ----------------------------------->
+                <p>Food: <input id="total-food" type="text"></p>
+                <p>Rent: <input id="total-rent" type="text"></p>
+                <p>Clothes: <input id="total-cloth" type="text"></p>
+                <!----------------------------------------- Click Button ------------------------------------->
+                <button id="click-calculate">Calculete</button>
+            </div>
+
+            <div>
+                <!---------------------------------- Total Expenses ----------------------------------->
+                <h2>Total Expenses: <span id="total-expenses"> 0</span></h2>
+                <!---------------------------------- Current Balance ----------------------------------->
+                <h2>Current Balance:<span id="current-balance">0</span></h2>
+            </div>
+
+            <div>
+                <!---------------------------------- Input Saving ----------------------------------->
+                <p>Save: 
+                    <input type="text" id="input-saveing"> % <button id="click-save">Save</button>
+                </p>
+            </div>
+
+            <div>
+                <!----------------------------------Total Saving ----------------------------------->
+                <h2>Saving Amount:<span id="total-saving">0</span></h2>
+                <!---------------------------------- Total Balance ----------------------------------->
+                <h2>Remainin Balance:<span id="total-balance">0</span></h2>
+            </div>
+        </section>
+    </main>
+    <!--------------------------------------- java script -------------------------------------->
+    <script src="app.js"></script>
+</body>
+</html>
