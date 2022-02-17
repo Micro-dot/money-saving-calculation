@@ -1,7 +1,7 @@
 /*------------------------------This is Body----------------------*/
 body{
     text-align: center;
-    margin: 0px;
+
 }
 /*------------------------------This is Main----------------------*/
 main{
@@ -10,16 +10,25 @@ main{
 /*------------------------------This is Image----------------------*/
 .image img{
     width: 80%;
-    height: 75%;
-    margin-top: 20px;
+    height: 80%;
+    margin-top: 80px;
     border-radius: 20px;
     box-shadow: 10px 10px 5px gray;
 }
 /*------------------------------This is Right Part----------------------*/
+.heading-message{
+    margin: auto;
+    background-color: aqua;
+    width: 25%;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px gray;
+
+}
 .right-part{
+    margin: auto;
     width: 30%;
     background-color: aqua;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 10px 10px 5px gray;
 }
 /*------------------------------This is Right Part Heading----------------------*/
@@ -47,4 +56,17 @@ main{
     border-radius: 10px;
     background-color: yellow;
     width: 100px;
+}
+@media only screen and (max-width: 600px) {
+    main{
+        display: block;
+        text-align: center;
+    }
+    .right-part{
+        margin: auto;
+        width: 80%;
+        background-color: aqua;
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px gray;
+  }
 }
