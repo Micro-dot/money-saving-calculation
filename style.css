@@ -1,37 +1,47 @@
+/*------------------------------This is Body----------------------*/
 body{
     text-align: center;
+    margin: 0px;
 }
+/*------------------------------This is Main----------------------*/
 main{
     display: flex;
 }
+/*------------------------------This is Image----------------------*/
 .image img{
-    width: 75%;
-    margin-top: 50px;
+    width: 80%;
+    height: 75%;
+    margin-top: 20px;
     border-radius: 20px;
     box-shadow: 10px 10px 5px gray;
 }
+/*------------------------------This is Right Part----------------------*/
 .right-part{
     width: 30%;
     background-color: aqua;
     border-radius: 10px;
     box-shadow: 10px 10px 5px gray;
 }
+/*------------------------------This is Right Part Heading----------------------*/
 .monthly-income{
     font-size: 30px;
     border-bottom:2px solid rgb(231, 84, 58);
 }
+/*------------------------------This is Calculate Button----------------------*/
 #click-calculate{
     padding: 10px;
     border-radius: 10px;
     background-color: yellow;
     width: 100px;
 }
+/*------------------------------This is Save Button----------------------*/
 #click-save{
     padding: 10px;
     border-radius: 10px;
     background-color: yellow;
     width: 100px;
 }
+/*------------------------------This is Reset Button----------------------*/
 #click-reset{
     padding: 10px;
     border-radius: 10px;
