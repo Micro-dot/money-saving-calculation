@@ -40,11 +40,15 @@ function firstCal(){
 }
 /*----------------------------------Call the Save Button -------------------------------------*/
 document.getElementById('click-save').addEventListener('click',function(){
+    /* Call total income */
+    const totalIncome = document.getElementById('total-income').value;
+    const totalIncomeCon = parseFloat(totalIncome);
+    /* Call Current Balance */
     const currentBalance = document.getElementById('current-balance').innerText;
     const currentBalanceCon = parseFloat(currentBalance);
-
+    
     const inputSaveing = document.getElementById('input-saveing').value;
-    const saveingCalculation = parseFloat(inputSaveing)/100 * currentBalanceCon;
+    const saveingCalculation = parseFloat(inputSaveing)/100 * totalIncomeCon;
     const totalSaveing = document.getElementById('total-saving');
      /*-------------------------If else Use for current Balance and saveing Calculation-----------------------------*/
     if(currentBalanceCon<500){
