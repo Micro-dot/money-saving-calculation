@@ -54,11 +54,16 @@ document.getElementById('click-save').addEventListener('click',function(){
     if(totalIncomeCon<500){
         document.body.style.display=alert('You Total income must be grater than 500 taka. Than you can save your money');
     }
-    else if(saveingCalculation>0 || totalBalance>0){
+    else if(saveingCalculation>0  ){
         totalSaveing.innerText = saveingCalculation;
-        const remainingBalance = document.getElementById('total-balance');
-        const totalBalance = currentBalanceCon - saveingCalculation;
-        remainingBalance.innerText = totalBalance;
+        if(currentBalanceCon>saveingCalculation){
+            const remainingBalance = document.getElementById('total-balance');
+            const totalBalance = currentBalanceCon - saveingCalculation;
+            remainingBalance.innerText = totalBalance;
+        }
+        else{
+            document.body.style.display=alert('remaining Balance is nagetive not allow');
+        }
     }  
 });
 /*----------------------------------Call the Reset Button -------------------------------------*/
