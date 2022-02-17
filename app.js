@@ -46,15 +46,15 @@ document.getElementById('click-save').addEventListener('click',function(){
     /* Call Current Balance */
     const currentBalance = document.getElementById('current-balance').innerText;
     const currentBalanceCon = parseFloat(currentBalance);
-    
+
     const inputSaveing = document.getElementById('input-saveing').value;
     const saveingCalculation = parseFloat(inputSaveing)/100 * totalIncomeCon;
     const totalSaveing = document.getElementById('total-saving');
      /*-------------------------If else Use for current Balance and saveing Calculation-----------------------------*/
-    if(currentBalanceCon<500){
-        document.body.style.display=alert('You Current balance must be grater than 500 taka. Than you can save your money');
+    if(totalIncomeCon<500){
+        document.body.style.display=alert('You Total income must be grater than 500 taka. Than you can save your money');
     }
-    else if(saveingCalculation>0){
+    else if(saveingCalculation>0 || totalBalance>0){
         totalSaveing.innerText = saveingCalculation;
         const remainingBalance = document.getElementById('total-balance');
         const totalBalance = currentBalanceCon - saveingCalculation;
