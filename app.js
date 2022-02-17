@@ -56,7 +56,7 @@ document.getElementById('click-save').addEventListener('click',function(){
     }
     else if(saveingCalculation>0  ){
         totalSaveing.innerText = saveingCalculation;
-        if(currentBalanceCon>saveingCalculation){
+        if(currentBalanceCon>=saveingCalculation){
             const remainingBalance = document.getElementById('total-balance');
             const totalBalance = currentBalanceCon - saveingCalculation;
             remainingBalance.innerText = totalBalance;
