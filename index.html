@@ -19,16 +19,18 @@
             <img src="picture/Monthly-expenses.jpg" alt="">
         </div>
         <!------------------------------------------ Import Calculation ---------------------------->
-        <section>
+        <section class="right-part">
             <div>
-                <h3>Monthly Income</h3>
+                <h3 class="monthly-income">Monthly Income</h3>
                 <!---------------------------------- Input Total Amount ----------------------------------->
-                <p>Income: <input id="total-income" type="text"></p>
-                <h3>Expenses</h3>
+                <p>Income: <input id="total-income" type="number" placeholder="Input your Salary"></p>
+                <h1>Expenses</h1>
                 <!---------------------------------- Input Expenses Amount ----------------------------------->
-                <p>Food: <input id="total-food" type="text"></p>
-                <p>Rent: <input id="total-rent" type="text"></p>
-                <p>Clothes: <input id="total-cloth" type="text"></p>
+                <div>
+                    <p>Food: <input id="total-food" type="number" placeholder="Input your Food Cost"></p>
+                <p>Rent: <input id="total-rent" type="number" placeholder="Input your Rent Cost"></p>
+                <p>Clothes: <input id="total-cloth" type="number" placeholder="Input your Clothes Cost"></p>
+                </div>
                 <!----------------------------------------- Click Button ------------------------------------->
                 <button id="click-calculate">Calculete</button>
             </div>
@@ -43,7 +45,7 @@
             <div>
                 <!---------------------------------- Input Saving ----------------------------------->
                 <p>Save: 
-                    <input type="text" id="input-saveing"> % <button id="click-save">Save</button>
+                    <input type="number" id="input-saveing" placeholder="Enter a number % what you saving "> % <button id="click-save">Save</button>
                 </p>
             </div>
 
@@ -53,6 +55,7 @@
                 <!---------------------------------- Total Balance ----------------------------------->
                 <h2>Remainin Balance:<span id="total-balance">0</span></h2>
             </div>
+            <button id="click-reset">Reset</button>
         </section>
     </main>
     <!--------------------------------------- java script -------------------------------------->

@@ -10,3 +10,31 @@ main{
     border-radius: 20px;
     box-shadow: 10px 10px 5px gray;
 }
+.right-part{
+    width: 30%;
+    background-color: aqua;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px gray;
+}
+.monthly-income{
+    font-size: 30px;
+    border-bottom:2px solid rgb(231, 84, 58);
+}
+#click-calculate{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: yellow;
+    width: 100px;
+}
+#click-save{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: yellow;
+    width: 100px;
+}
+#click-reset{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: yellow;
+    width: 100px;
+}
