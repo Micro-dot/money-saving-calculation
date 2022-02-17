@@ -36,6 +36,9 @@ main{
     font-size: 30px;
     border-bottom:2px solid rgb(231, 84, 58);
 }
+.font{
+    font-size: 19px;
+}
 /*------------------------------This is Calculate Button----------------------*/
 #click-calculate{
     padding: 10px;
