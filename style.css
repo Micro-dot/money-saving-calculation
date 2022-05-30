@@ -60,6 +60,8 @@ main{
     background-color: yellow;
     width: 100px;
 }
+
+/*-------------------------Resposive mobile device------------------------- */
 @media only screen and (max-width: 600px) {
     main{
         display: block;
